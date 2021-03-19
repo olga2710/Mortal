@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: #010202;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.header{
+    width: 90%;
+    max-width: 1146px;
+    margin: auto;
+    padding: 56px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: block;
+}
+.user-img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user-name{
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 15px;
+}
+.app{
+    background: linear-gradient(90deg, #010202 0%,#010202 45%, rgba(1, 2, 2, 0.2) 90.9%);
+    min-height: 100vh; 
+    color: white;
+}
+.film{
+    width: 90%;
+    max-width: 1146px;
+    margin: auto;
+    padding: 201px 0;
+    height: calc(100% - 96px)
+
+
+}
+.tags{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 16px;
+    line-height: 140%;
+    flex-wrap: wrap;
+}
+.tags > *{
+    color:#E5E5E560;
+    margin-right:15px ;
+    margin-bottom: 10px;
+}
+.age{
+    border: 1px solid #FFFFFF50;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 1px 5px;
+}
+.description{
+    max-width: 460px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 140%; 
+    margin-bottom: 36px;
+    
+}
+.buttons{
+    display: flex;
+    align-items: center;
+}
+.button-primary{
+    padding: 10px 25px 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background: #EA6E20;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF; 
+    cursor: pointer;
+
+}
+.button-default{
+    padding: 11px 26px 11px 26px;
+    border: none;
+    border-radius: 6px;
+    background: #2F2F2F;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF; 
+    margin-left: 15px;
+    cursor: pointer;
+}
+.button-text{
+  margin-left: 10px;  
+}
+.vertical{
+    display: flex;
+    align-items: center;
+
+}
+
+@media(max-width: 768px){
+    .app{
+        height: auto;
+        padding-bottom: 400px;
+        background: url("../img/cover-image.png") no-repeat bottom center/ 300px;
+    }
+    .film{
+        padding-top: 20%;
+    }
+    .description{
+        font-size: 16px;
+        max-width: 333px;
+    }
+    .film-logo{
+        max-width: 100%;
+
+    }
+    video{
+        display: none;
+    }
+}
+@media(max-width: 576px){
+ 
+ .button-text{
+     display: none;
+ }
+.user-name{
+    display: none;
+}
+.button-default{
+    padding: 15.85px 26px;
+}
+.app{
+    padding-bottom: 200px;
+    background-size: 300px;
+}
+.buttons{
+    flex-wrap: wrap;  
+}
+}
+.modal{
+    display: none;
+    background: #2F2F2F;
+    color: #FFFFFF;
+    font-family:'Source Sans Pro', sans-serif ;
+    font-weight: 600;
+}
+.spam-modal{
+    margin-right: 10px;
+}
+#email{
+    background-color: #FFFFFF50;
+    border: none;
+    color: #FFFFFF;
+}
+#email:hover{
+ border: none;
+ background-color: #FFFFFF70;
+}
+#email:active{
+    border: none;
+ background-color: #FFFFFF70;
+}
+.modal-button{
+    border: none;
+    border-radius: 6px;
+    background: #EA6E20;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF; 
+    cursor: pointer;
+    margin-left: 10px;
+}
